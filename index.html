@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form action="/" method="post">
+      <input type="text" name="num1" placeholder="num1">
+      <input type="text" name="num2" placeholder="num2">
+      <input type="text" name="op" placeholder="operator = {+,-,*,/,%}">
+      <button type="submit" name="submit">Calculate</button>
+    </form>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h2>Calculator</h2>
+				<form method="POST" action="/">
+					<div class="form-group">
+						<label for="number1">Number 1:</label>
+						<input type="number" name="num1" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="number2">Number 2:</label>
+						<input type="number" name="num2" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="operator">Operator:</label>
+						<select name="op" class="form-control">
+							<option value="+">Add</option>
+							<option value="-">Subtract</option>
+							<option value="*">Multiply</option>
+							<option value="/">Divide</option>
+              <option value="%">Modulo</option>
+						</select>
+					</div>
+					<button type="submit" class="btn btn-primary">Calculate</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
